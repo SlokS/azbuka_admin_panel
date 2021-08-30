@@ -1,0 +1,21 @@
+@max720: ~"(max-width: 720px)";
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  @media @max720 {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__logo {
+    width: 140px;
+  }
+
+  &__login {
+    margin-right: 10px;
+  }
+
+}
